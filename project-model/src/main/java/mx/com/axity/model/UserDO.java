@@ -3,18 +3,18 @@ package mx.com.axity.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "USER")
+@Table(name = "users", schema = "public")
 public class UserDO {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ID")
+    @Column(name = "id")
     private Long id;
-    @Column(name = "DS_NAME")
+    @Column(name = "ds_name")
     private String name;
-    @Column(name = "DS_LASTNAME")
+    @Column(name = "ds_lastname")
     private String lastName;
-    @Column(name = "AGE")
+    @Column(name = "age")
     private int age;
 
     protected UserDO() {
