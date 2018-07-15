@@ -25,15 +25,6 @@ public class ProjectServiceImpl implements IProjectService {
 
         var usersDO = this.userDAO.findAll();
 
-        /*List<UserTO> users = new ArrayList<>();
-        var user = new UserTO(){{
-            setId(1);
-            setName("Javier");
-            setLastName("Rodriguez");
-            setAge(10);
-        }};
-        users.add(user);*/
-
         Type userDAOType = new TypeToken<List<UserDO>>() {}.getType();
         var usersTO = this.modelMapper.map(usersDO, userDAOType);
 
