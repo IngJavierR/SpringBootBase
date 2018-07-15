@@ -1,13 +1,20 @@
 package mx.com.axity.model;
 
-//@Entity
+import javax.persistence.*;
+
+@Entity
+@Table(name = "USER")
 public class UserDO {
 
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "ID")
     private Long id;
+    @Column(name = "DS_NAME")
     private String name;
+    @Column(name = "DS_LASTNAME")
     private String lastName;
+    @Column(name = "AGE")
     private int age;
 
     protected UserDO() {

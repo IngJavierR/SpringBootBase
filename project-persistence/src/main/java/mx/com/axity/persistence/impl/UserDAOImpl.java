@@ -1,6 +1,7 @@
 package mx.com.axity.persistence.impl;
 
-//@Repository
-/*public abstract class UserDAOImpl implements UserDAO {
+import mx.com.axity.persistence.UserDAO;
 
-}*/
+public abstract class UserDAOImpl{
+
+}

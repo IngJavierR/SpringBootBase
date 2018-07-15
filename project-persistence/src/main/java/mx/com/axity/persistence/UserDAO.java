@@ -1,7 +1,10 @@
 package mx.com.axity.persistence;
 
+import mx.com.axity.model.UserDO;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-/*public interface UserDAO extends CrudRepository<UserDO, Long> {
+@Repository
+public interface UserDAO extends CrudRepository<UserDO, Long> {
 
-    List<UserDO> findByLastName(String lastName);
-}*/
+}
