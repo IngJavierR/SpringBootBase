@@ -23,7 +23,7 @@ public class ProjectServiceImpl implements IProjectService {
     @Override
     public List<UserTO> getUsers() {
 
-        var usersDO = this.userDAO.findAll();
+        var usersDO = this.userDAO.findByLastName("Rodriguez");
 
         Type userDAOType = new TypeToken<List<UserDO>>() {}.getType();
         var usersTO = this.modelMapper.map(usersDO, userDAOType);
