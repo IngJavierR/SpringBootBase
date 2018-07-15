@@ -11,5 +11,11 @@
 
     <artifactId>project-persistence</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>mx.com.axity</groupId>
+            <artifactId>project-model</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

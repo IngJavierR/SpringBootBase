@@ -1,8 +1,10 @@
 package mx.com.axity.web.rest;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan("mx.com.axity")
@@ -16,5 +18,10 @@ public class Application {
         for (String name : applicationContext.getBeanDefinitionNames()) {
             System.out.println(name);
         }
+    }
+
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
     }
 }
