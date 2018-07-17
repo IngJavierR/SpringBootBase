@@ -1,4 +1,4 @@
-package mx.com.axity.web.rest;
+package mx.com.axity.web;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
@@ -28,4 +28,6 @@ public class Application {
     public ModelMapper modelMapper() {
         return new ModelMapper();
     }
+
+
 }
