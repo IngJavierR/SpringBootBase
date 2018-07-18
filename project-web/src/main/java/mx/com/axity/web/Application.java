@@ -8,7 +8,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.web.client.RestTemplate;
 
+//@EnableEurekaClient
 @SpringBootApplication
 @ComponentScan("mx.com.axity")
 @EnableJpaRepositories("mx.com.axity.persistence")
@@ -29,5 +31,10 @@ public class Application {
         return new ModelMapper();
     }
 
+    /*@LoadBalanced
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }*/
 
 }

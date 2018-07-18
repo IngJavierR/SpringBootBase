@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 @RestController
@@ -18,6 +19,9 @@ import java.util.List;
 public class HelloController {
 
     final static Logger log = Logger.getLogger(HelloController.class);
+
+    //@Autowired
+    //RestTemplate restTemplate;
 
     @Autowired
     ProjectFacade projectFacade;
