@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/users")
+@RequestMapping("users")
 @Api(value="users", description="Operaciones con usuarios")
 public class HelloController {
 
