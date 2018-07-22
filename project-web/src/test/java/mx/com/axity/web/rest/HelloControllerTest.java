@@ -1,8 +1,7 @@
 package mx.com.axity.web.rest;
 
 import jdk.jshell.spi.ExecutionControl;
-import mx.com.axity.model.UserDO;
-import mx.com.axity.services.facade.ProjectFacade;
+import mx.com.axity.services.facade.IProjectFacade;
 import mx.com.axity.web.Application;
 import org.junit.Assert;
 import org.junit.Test;
@@ -26,14 +25,14 @@ public class HelloControllerTest {
     private TestEntityManager entityManager;
 
     @Autowired
-    ProjectFacade projectFacade;
+    IProjectFacade IProjectFacade;
 
     @Test
     public void exampleTest() throws ExecutionControl.NotImplementedException {
 
         //this.entityManager.persist(new UserDO("Javier", "Rodriguez", 1));
 
-        var users = projectFacade.getAllUsers();
+        var users = IProjectFacade.getAllUsers();
 
         Assert.assertEquals(1, users.size());
     }
