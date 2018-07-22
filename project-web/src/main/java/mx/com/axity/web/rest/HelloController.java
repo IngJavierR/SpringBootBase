@@ -1,7 +1,6 @@
 package mx.com.axity.web.rest;
 
 import io.swagger.annotations.Api;
-import jdk.jshell.spi.ExecutionControl;
 import mx.com.axity.commons.to.UserTO;
 import mx.com.axity.services.facade.IProjectFacade;
 import org.apache.log4j.Logger;
