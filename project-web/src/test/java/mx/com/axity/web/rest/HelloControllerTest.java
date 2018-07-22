@@ -28,7 +28,7 @@ public class HelloControllerTest {
     IProjectFacade IProjectFacade;
 
     @Test
-    public void exampleTest() throws ExecutionControl.NotImplementedException {
+    public void exampleTest() {
 
         //this.entityManager.persist(new UserDO("Javier", "Rodriguez", 1));
 
