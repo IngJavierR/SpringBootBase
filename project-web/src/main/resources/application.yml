@@ -9,6 +9,8 @@ spring:
     show-sql: true
   application:
     name: project-service
+  profiles:
+    active: dev
 
 server:
   port: 8090
