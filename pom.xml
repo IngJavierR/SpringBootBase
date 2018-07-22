@@ -55,6 +55,11 @@
                 <version>${snapshot.version}</version>
             </dependency>
             <dependency>
+                <groupId>mx.com.axity</groupId>
+                <artifactId>project-web</artifactId>
+                <version>${snapshot.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-parent</artifactId>
                 <version>${spring.version}</version>
