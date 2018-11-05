@@ -4,7 +4,7 @@ import mx.com.axity.commons.to.UserTO;
 
 import java.util.List;
 
-public interface IProjectFacade {
+public interface IprojectFacade {
 
     List<UserTO> getAllUsers();
 

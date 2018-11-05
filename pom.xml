@@ -19,7 +19,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <snapshot.version>1.0-SNAPSHOT</snapshot.version>
-        <log4j.version>1.2.17</log4j.version>
+        <log4jcore.version>2.10.0</log4jcore.version>
+        <log4japi.version>2.10.0</log4japi.version>
         <aspectj.version>1.5.4</aspectj.version>
         <model.mapper.version>1.0.0</model.mapper.version>
         <h2db.version>1.4.197</h2db.version>
@@ -89,10 +90,15 @@
                 <version>${aspectj.version}</version>
             </dependency>
             <dependency>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>${log4j.version}</version>
-            </dependency>
+               <groupId>org.apache.logging.log4j</groupId>
+               <artifactId>log4j-core</artifactId>
+               <version>${log4jcore.version}</version>
+           </dependency>
+           <dependency>
+               <groupId>org.apache.logging.log4j</groupId>
+               <artifactId>log4j-api</artifactId>
+               <version>${log4japi.version}</version>
+           </dependency>
             <dependency>
                 <groupId>com.github.rozidan</groupId>
                 <artifactId>modelmapper-spring-boot-starter</artifactId>

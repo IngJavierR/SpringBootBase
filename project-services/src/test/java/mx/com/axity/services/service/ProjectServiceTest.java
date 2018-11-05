@@ -4,7 +4,7 @@ import mx.com.axity.services.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ProjectServiceTest extends BaseTest {
+public class projectServiceTest extends BaseTest {
 
     @Test
     public void exampleTest() {

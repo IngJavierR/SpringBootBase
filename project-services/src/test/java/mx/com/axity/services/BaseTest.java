@@ -1,6 +1,6 @@
 package mx.com.axity.services;
 
-import mx.com.axity.services.service.IProjectService;
+import mx.com.axity.services.service.IprojectService;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -21,6 +21,6 @@ public abstract class BaseTest {
     public TestEntityManager entityManager;
 
     @Autowired
-    public IProjectService projectService;
+    public IprojectService projectService;
 
 }

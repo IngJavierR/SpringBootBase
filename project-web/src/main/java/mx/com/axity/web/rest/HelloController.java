@@ -2,8 +2,9 @@ package mx.com.axity.web.rest;
 
 import io.swagger.annotations.Api;
 import mx.com.axity.commons.to.UserTO;
-import mx.com.axity.services.facade.IProjectFacade;
-import org.apache.log4j.Logger;
+import mx.com.axity.services.facade.IprojectFacade;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,18 +20,24 @@ import java.util.List;
 @Api(value="project", description="Operaciones con project")
 public class HelloController {
 
-    final static Logger log = Logger.getLogger(HelloController.class);
+    static final Logger LOG = LogManager.getLogger(HelloController.class);
 
     //@Autowired
     //RestTemplate restTemplate;
 
     @Autowired
-    IProjectFacade IProjectFacade;
+    IprojectFacade IprojectFacade;
 
     @RequestMapping(value = "/find", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<List<UserTO>> getAllUsers() {
-        log.info("Se invoca /find");
-        var users = this.IProjectFacade.getAllUsers();
+        LOG.info("Se invoca /find");
+        var users = this.IprojectFacade.getAllUsers();
         return new ResponseEntity<>(users, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET, produces = "application/json")
+    public ResponseEntity test() {
+        LOG.info("Se invoca /test");
+        return new ResponseEntity<>("Prueba Ok", HttpStatus.OK);
     }
 }
