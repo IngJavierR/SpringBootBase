@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:5432/unbound
-    username: postgres
-    password: project123
+    url: jdbc:postgresql://workpoint.caafadhxgfvs.us-east-1.rds.amazonaws.com:5432/unbound
+    username: workpoint
+    password: w0rp01nt
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
@@ -20,7 +20,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8000/eureka
+      defaultZone: http://ec2-34-207-173-80.compute-1.amazonaws.com:8000/eureka
   instance:
     leaseRenewalIntervalInSeconds: 5   
     preferIpAddress: true
